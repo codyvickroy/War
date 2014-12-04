@@ -29,7 +29,7 @@ public class CardGame {
     * sorts a deck of cards into two hands
     */
     public void setUp(){
-        CardGameGUI gui = new CardGameGUI;
+        CardGameGUI gui = new CardGameGUI();
 
         //Creates a Deck of 52 Cards
         for(int i = 1 ; i <= 52; i++){
@@ -41,7 +41,7 @@ public class CardGame {
         
         Collections.shuffle(allCards);   //shuffles our cards
 
-        distributes the cards to the hands
+        //distributes the cards to the hands
         for(int i = 1 ; i <= allCards.size()-1; i++){
             if(i <= 26){
                 uCards.add(allCards.get(i));

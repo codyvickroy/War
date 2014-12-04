@@ -30,23 +30,23 @@ public class Card {
         this.rank = rank;
         
         if(suit == 1){
-            suitName = "Spades";
+            suitName = "s";
         }else if(suit == 2){
-            suitName = "Clubs";
+            suitName = "c";
         }else if(suit == 3){
-            suitName = "Hearts";
+            suitName = "h";
         }else if(suit == 4){
-            suitName = "Diamonds";
+            suitName = "d";
         }
         
         if(rank == 0){
-            rankName = "Ace";
+            rankName = "ace";
         }else if(rank == 10){
-            rankName = "Jack";
+            rankName = "jack";
         }else if(rank == 11){
-            rankName = "Queen";
+            rankName = "queen";
         }else if(rank == 12){
-            rankName = "King";
+            rankName = "king";
         }else{
             rankName = Integer.toString(rank);
         }
@@ -103,7 +103,7 @@ public class Card {
     * @return 
     */ 
     public String toString(){
-            return rankName+" of "+suitName;
+            return rankName+suitName;
     }//end toString
     
 } //end Card
